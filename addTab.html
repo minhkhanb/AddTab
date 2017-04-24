@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/screen.css">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/addTab.jquery.js"></script> 
+</head>
+<body>
+<h2>Documents</h2>
+<div id="doclist">
+<ul id="documents" style="float:right">
+        <li><a href="#" rel="1" data-href="/home/index" title="This is the content of Document1">Document1</a></li>
+        <li><a href="#" rel="2" data-href="/home/index" title="This is the content of Document2">Document2</a></li>
+        <li><a href="#" rel="3" data-href="/home/index" title="This is the content of Document3">Document3</a></li>
+        <li><a href="#" rel="4" data-href="/home/index" title="This is the content of Document4">Document4</a></li>
+        <li><a href="#" rel="5" data-href="/home/index" title="This is the content of Document5">Document5</a></li>
+		<li><a href="#" rel="6" data-href="/home/index" title="This is the content of Document1">Document6</a></li>
+        <li><a href="#" rel="7" data-href="/home/index" title="This is the content of Document2">Document7</a></li>
+        <li><a href="#" rel="8" data-href="/home/index" title="This is the content of Document3">Document8</a></li>
+        <li><a href="#" rel="9" data-href="/home/index" title="This is the content of Document4">Document9</a></li>
+        <li><a href="#" rel="10" data-href="/home/index" title="This is the content of Document5">Document10</a></li>
+		<li><a href="#" rel="11" data-href="/home/index" title="This is the content of Document1">Document11</a></li>
+        <li><a href="#" rel="12" data-href="/home/index" title="This is the content of Document2">Document12</a></li>
+        <li><a href="#" rel="13" data-href="/home/index" title="This is the content of Document3">Document13</a></li>
+        <li><a href="#" rel="14" data-href="/home/index" title="This is the content of Document4">Document14</a></li>
+        <li><a href="#" rel="15" data-href="/home/index" title="This is the content of Document5">Document15</a></li>
+    </ul>
+	<div class="wapper_tab" style="float:left; width:740px; overflow:hidden;position: relative; height: 38px;" >
+		<div id="left" style="display:none;"></div>
+		<div id="right" style="display:none;"></div>
+		<ul id="tabs" style="position: absolute;" >
+                    
+        </ul>
+		
+	</div>
+    
+	<div id="content"></div>
+</div>
+<script type="text/javascript">
+      //  var $tabs;
+    $(document).ready(function () {
+        //console.log(JSON.parse(localStorage.getItem("arrtabs")));
+			$('#documents').scrollTabs();
+	    });
+                    
+          
+</script>
+</body>
+</html>
